@@ -23,6 +23,7 @@ tags:
 List를 다른 List로 assign하는 경우 메모리를 공유하여 사용함. 따라서, 두 List 중 하나의 값을 업데이트하면 나머지 다른 List의 값도 바뀜. 따라서, 단순 복사 시에는 copy() method를 사용하여야 함.
 
 >List를 단순 assign한 경우
+
 ```python
 >>> list1 = [1,2,3]
 >>> list2 = list1
@@ -66,6 +67,7 @@ List를 확장하는 방법에는 더하는 방법과 extend를 사용하는 방
 ### List unpacking
 List 내 각각의 값을 Index 필요없이 변수에 할당하는 방법
 >방법 1
+
 ```python
 >>> aaa = ['spikey', 48, 'Photo']
 >>> name, age, hobby = aaa        # List unpacking
@@ -77,6 +79,7 @@ List 내 각각의 값을 Index 필요없이 변수에 할당하는 방법
 'Photo'
 ```
 >방법 2
+
 ```python
 >>> aaa = ['spikey', 48, 'Photo']
 >>> name, *ndata = aaa            # List unpacking
