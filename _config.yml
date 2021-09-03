@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "sicrone"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Mechanical engineer and researcher"
+  bio              : "Mechanical engineer and researcher interested coding"
   location         : "Somewhere in Daejeon"
   email            : sicrone@gmail.com
   links:
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/sicrone"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
