@@ -1,6 +1,7 @@
 ---
 title: "Python 관련 Tip 모음" 
 excerpt: "Python을 이용하여 코딩작업 시 개인적으로 유용했던 Tip 정리. 지속적으로 추가 예정!!!" 
+show_date: true
 
 toc: true
 toc_sticky: true
