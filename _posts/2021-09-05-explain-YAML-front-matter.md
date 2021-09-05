@@ -165,7 +165,7 @@ classes: wide
 
 ##### head
 
-head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다.
+head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다. 그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
 
 ```html
 {% if page.page_css %}
@@ -175,8 +175,6 @@ head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custo
 {% endif %}
 ```
 
-그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
-
 ```yaml
 page_css:
   - /path/to/your/custom.css
@@ -184,7 +182,7 @@ page_css:
 
 ##### footer
 
-footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다.
+footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다. 그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
 
 ```html
 {% if page.page_js %}
@@ -193,8 +191,6 @@ footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/c
   {% endfor %}
 {% endif %}
 ```
-
-그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
 
 ```yaml
 page_js:
