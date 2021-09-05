@@ -17,24 +17,24 @@ docs:
 - title: "YAML front matter"
   children:
     - title: "title"
-      url: /explain-YAML-front-matter/#title
+      url: /markdown/explain-YAML-front-matter/#title
     - title: "excerpt"
-      url: /explain-YAML-front-matter/#excerpt
+      url: /markdown/explain-YAML-front-matter/#excerpt
     - title: "layout"
-      url: /explain-YAML-front-matter/#layout
+      url: /markdown/explain-YAML-front-matter/#layout
     - title: "table of contents"
-      url: /explain-YAML-front-matter/#table-of-contents
+      url: /markdown/explain-YAML-front-matter/#table-of-contents
     - title: "show_date"
-      url: /explain-YAML-front-matter/#show_date
+      url: /markdown/explain-YAML-front-matter/#show_date
     - title: "read_time"
-      url: /explain-YAML-front-matter/#read_time
+      url: /markdown/explain-YAML-front-matter/#read_time
     - title: "categories"
-      url: /explain-YAML-front-matter/#categories
+      url: /markdown/explain-YAML-front-matter/#categories
     - title: "tags"
-      url: /explain-YAML-front-matter/#tags
+      url: /markdown/explain-YAML-front-matter/#tags
     - title: "header"
-      url: /explain-YAML-front-matter/#header
+      url: /markdown/explain-YAML-front-matter/#header
     - title: "기타"
-      url: /explain-YAML-front-matter/#기타
+      url: /markdown/explain-YAML-front-matter/#기타
     - title: "적용 예"
-      url: /explain-YAML-front-matter/#적용-예
+      url: /markdown/explain-YAML-front-matter/#적용-예
