@@ -20,7 +20,7 @@ header:
       url: "https://jekyllrb.com/docs/front-matter/"
 
 categories: 
-- 일반 
+- markdown
 tags: 
 - YAML front matter
 - sample
