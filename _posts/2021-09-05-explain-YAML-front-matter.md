@@ -27,7 +27,7 @@ tags:
 
 ### YAML front matter
 
-YAML front matter란 [Jekyll](https://jekyllrb.com/)를 이용하여  github 블로그의 글을 작성할 경우 글의 맨 앞에 삽입되는 부분입니다.  front matter가 시작되고 끝나는 부분은 3개의 대시(-)로 구분됩니다.
+**YAML front matter**란 [Jekyll](https://jekyllrb.com/)을 이용하여  github 블로그의 글을 작성할 경우 글의 맨 앞에 삽입되는 부분입니다.  front matter가 시작되고 끝나는 부분은 3개의 대시(-)로 구분됩니다.
 
 ```yaml
 ---
@@ -54,7 +54,7 @@ excerpt: "본 글은 YAML front matter 작성을 위한 설정변수 및 설명�
 
 #### layout
 
-layout에 지정된 값에 따라 자동으로 class가 정의되어 각 layout에 알맞는 화면을 보여준다. 일반적으로 많이 사용되는 layout은 다음과 같다.
+layout에 지정된 값에 따라 자동으로 class가 정의되어 각 layout에 알맞는 화면을 보여줍니다. 일반적으로 많이 사용되는 layout은 다음과 같습니다.
 
 - `single` : 일반적인 글 작성의 경우
 - `categories` : 지정된 카테고리별 목록을 보여주는 페이지를 작성할 경우
@@ -63,7 +63,7 @@ layout에 지정된 값에 따라 자동으로 class가 정의되어 각 layout�
 - `search` : 검색 페이지를 작성할 경우
 - `default` :  `_config.yml`에 사전 정의된 포맷을 사용할 경우
 
-그 외에도 `archive`, `archive-taxonomy`, `splash`, `home` 등이 있다.
+그 외에도 `archive`, `archive-taxonomy`, `splash`, `home` 등이 있습니다.
 
 ```yaml
 layout: single
@@ -102,4 +102,61 @@ show_date: true
 read_time: true
 ```
 
-20210905 계속 추가 예정
+#### categories
+
+글의 카테고리를 지정하기 위한 부분으로, 이를 적용시 해당 글의 주소는 `https://id.github.io/카테고리명/글제목`이 됩니다.
+
+```yaml
+categories:
+  - normal
+```
+
+#### tags
+
+작성된 글의 tag를 지정하는 부분으로, 여러개를 동시에 지정할 수 있습니다.
+
+```yaml
+tags:
+  - description
+  - YAML front matter
+```
+
+#### header
+
+포스트 혹은 페이지에 이미지 같은 시각적인 요소를 추가하기 위한 용도로 사용됩니다. header에 추가될 수 있는 옵션은 다음과 같습니다.
+
+| Name                 | Description                                                 | Default |
+| -------------------- | ----------------------------------------------------------- | ------- |
+| overlay_image        | 글 상단의 header 부분에 삽입될 overlay image를 지정         |         |
+| overlay_filter       | overlay image의 색상 혹은 투명도를 지정                     |         |
+| overay_color         | overlay image 대신 색상을 지정                              |         |
+| caption              | overlay image의 캡션을 지정                                 |         |
+| show_overlay_excerpt | overlay image(or color)에 excerpt를 표시할지의 여부         | `true`  |
+| excerpt              | header에 excerpt를 추가할 경우 기존 작성된 excerpt를 덮어씀 |         |
+| actions              | action button link를 호출                                   |         |
+
+```yaml
+header:
+  # overlay_color: "#333"
+  overlay_image: /assets/img/header.jpg
+  overlay_filter: 0.5  # opacity
+  # overlay_filter: rgba(255, 0, 0, 0.5)  # color filter and opacity
+  # overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))  ## color filter, opacity and linear gradient
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  show_overlay_excerpt: true
+  actions:
+    label: "Download"
+    url: "https://github.com"
+```
+
+#### 기타
+
+##### wide page
+
+wide 형태의 페이지로 글을 게시하려면 포스트 또는 페이지의 YAML front matter에 아래의 내용을 추가합니다.
+
+```yaml
+classes: wide
+```
+
+ 20210905 계속 추가 예정
