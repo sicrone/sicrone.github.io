@@ -223,11 +223,11 @@ defaults:
 head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다. 
 
 ```javascript
- {% if page.page_css %}
-   {% for stylesheet in page.page_css %}
-     <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
-   {% endfor %}
- {% endif %}
+{% if page.page_css %}
+  {% for stylesheet in page.page_css %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
+{% endif %}
 ```
 
 그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
@@ -242,11 +242,11 @@ page_css:
 footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다. 
 
 ```javascript
- {% if page.page_js %}
-   {% for script in page.page_js %}
-     <script src="{{ script | relative_url }}"></script>
-   {% endfor %}
- {% endif %}
+{% if page.page_js %}
+  {% for script in page.page_js %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
 ```
 
 그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
