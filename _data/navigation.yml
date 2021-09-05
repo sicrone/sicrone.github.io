@@ -17,24 +17,24 @@ docs:
 - title: "YAML front matter"
   children:
     - title: "title"
-      url: /#title
+      url: /explain-YAML-front-matter/#title
     - title: "excerpt"
-      url: /#excerpt
+      url: /explain-YAML-front-matter/#excerpt
     - title: "layout"
-      url: /#layout
+      url: /explain-YAML-front-matter/#layout
     - title: "table of contents"
-      url: /#table-of-contents
+      url: /explain-YAML-front-matter/#table-of-contents
     - title: "show_date"
-      url: /#show_date
+      url: /explain-YAML-front-matter/#show_date
     - title: "read_time"
-      url: /#read_time
+      url: /explain-YAML-front-matter/#read_time
     - title: "categories"
-      url: /#categories
+      url: /explain-YAML-front-matter/#categories
     - title: "tags"
-      url: /#tags
+      url: /explain-YAML-front-matter/#tags
     - title: "header"
-      url: /#header
+      url: /explain-YAML-front-matter/#header
     - title: "기타"
-      url: /#기타
+      url: /explain-YAML-front-matter/#기타
     - title: "적용 예"
-      url: /#적용-예
+      url: /explain-YAML-front-matter/#적용-예
