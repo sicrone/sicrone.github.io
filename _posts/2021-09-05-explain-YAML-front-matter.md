@@ -162,21 +162,75 @@ wide 형태의 페이지로 글을 게시하려면 포스트 또는 페이지의
 classes: wide
 ```
 
+#### sidebar
+
+sidebar를 추가할 경우 사용되며, sidebar 목록은 `_data/navigation.yml`에 아래와 같은 형식으로 작성합니다.
+
+```yaml
+docs:
+- title: "YAML front matter"
+  children:
+    - title: "title"
+      url: /markdown/explain-YAML-front-matter/#title
+    - title: "excerpt"
+      url: /markdown/explain-YAML-front-matter/#excerpt
+    - title: "layout"
+      url: /markdown/explain-YAML-front-matter/#layout
+    - title: "table of contents"
+      url: /markdown/explain-YAML-front-matter/#table-of-contents
+    - title: "show_date"
+      url: /markdown/explain-YAML-front-matter/#show_date
+    - title: "read_time"
+      url: /markdown/explain-YAML-front-matter/#read_time
+    - title: "categories"
+      url: /markdown/explain-YAML-front-matter/#categories
+    - title: "tags"
+      url: /markdown/explain-YAML-front-matter/#tags
+    - title: "header"
+      url: /markdown/explain-YAML-front-matter/#header
+    - title: "기타"
+      url: /markdown/explain-YAML-front-matter/#기타
+    - title: "적용 예"
+      url: /markdown/explain-YAML-front-matter/#적용-예
+```
+
+sidebar를 개별 포스트 또는 페이지에 적용하려면 YAML front matter에 아래의 내용을 추가합니다.
+
+```yaml
+sidebar:
+  nav: "docs"
+```
+
+블로그 메인에 sidebar를 추가하려면, `_config.yml`의 default 부분에 아래의 내용을 추가하면 됩니다.
+
+```yaml
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
+```
+
 #### custom head and footer
 
 포스트 혹은 페이지의 head 및 footer에 custom CSS를 적용하고자 할 때 사용됩니다.
 
 ##### head
 
-head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다. 그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
+head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다. 
 
 ```html
-{% if page.page_css %}
-  {% for stylesheet in page.page_css %}
-    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
-  {% endfor %}
-{% endif %}
+ {% if page.page_css %}
+   {% for stylesheet in page.page_css %}
+     <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+   {% endfor %}
+ {% endif %}
 ```
+
+그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
 
 ```yaml
 page_css:
@@ -185,15 +239,17 @@ page_css:
 
 ##### footer
 
-footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다. 그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
+footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다. 
 
 ```html
-{% if page.page_js %}
-  {% for script in page.page_js %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
+ {% if page.page_js %}
+   {% for script in page.page_js %}
+     <script src="{{ script | relative_url }}"></script>
+   {% endfor %}
+ {% endif %}
 ```
+
+그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
 
 ```yaml
 page_js:
