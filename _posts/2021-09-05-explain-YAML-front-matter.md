@@ -162,7 +162,7 @@ wide 형태의 페이지로 글을 게시하려면 포스트 또는 페이지의
 classes: wide
 ```
 
-#### sidebar
+#### sidebar (← 참조)
 
 sidebar를 추가할 경우 사용되며, sidebar 목록은 `_data/navigation.yml`에 아래와 같은 형식으로 작성합니다.
 
