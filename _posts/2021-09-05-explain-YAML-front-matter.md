@@ -159,4 +159,77 @@ wide 형태의 페이지로 글을 게시하려면 포스트 또는 페이지의
 classes: wide
 ```
 
+##### custom head and footer
+
+포스트 혹은 페이지의 head 및 footer에 custom CSS를 적용하고자 할 때 사용됩니다.
+
+- head
+
+head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다.
+
+```html
+{% if page.page_css %}
+  {% for stylesheet in page.page_css %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
+{% endif %}
+```
+
+그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
+
+```yaml
+page_css:
+  - /path/to/your/custom.css
+```
+
+- footer
+
+footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다.
+
+```html
+{% if page.page_js %}
+  {% for script in page.page_js %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+```
+
+그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
+
+```yaml
+page_js:
+  - /path/to/your/custom.css
+```
+
+#### 적용 예
+
+현재 글에 적용된 YAML front matter는 아래와 같습니다.
+
+```yaml
+title: "YAML front matter 설명" 
+excerpt: "YAML front matter의 작성에 사용되는 설정변수의 의미 사용방법에 대해 설명합니다. 내용은 지속적으로 추가될 예정입니다."
+show_date: true
+read_time: true
+
+toc: true
+toc_sticky: true
+toc_label: "Page Index"
+
+header:
+  show_overlay_excerpt: true
+  overlay_filter: 0.5
+  overlay_color: "#333"
+  actions:
+    - label: "More Info"
+      url: "https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
+
+categories: 
+- markdown 
+tags: 
+- markdown
+- YAML front matter
+- description
+- jekyll
+```
+
  20210905 계속 추가 예정
