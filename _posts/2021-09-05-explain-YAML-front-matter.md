@@ -218,7 +218,7 @@ defaults:
 
 포스트 혹은 페이지의 head 및 footer에 custom CSS를 적용하고자 할 때 사용됩니다. 적용하기에 앞서 우선 `_includes/head/custom.html` 및 `_includes/footer/custom.html`를 아래와 같이 수정해야 합니다.
 
-```javascript
+```yaml
 {% if page.page_css %}
   {% for stylesheet in page.page_css %}
     <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
@@ -226,7 +226,7 @@ defaults:
 {% endif %}
 ```
 
-```javascript
+```yaml
 {% if page.page_js %}
   {% for script in page.page_js %}
     <script src="{{ script | relative_url }}"></script>
