@@ -52,7 +52,7 @@ title: "YAML front matter 설명"
 글의 내용을 간략히 요약한 문장으로, 제목 밑에 요약문이 함께 표시됩니다.
 
 ```yaml
-excerpt: "본 글은 YAML front matter 작성을 위한 설정변수 및 설명을 간략히 요약하였습니다."
+excerpt: "YAML front matter 작성을 위한 설정변수 및 설명을 간략히 요약하였습니다."
 ```
 
 ### layout
