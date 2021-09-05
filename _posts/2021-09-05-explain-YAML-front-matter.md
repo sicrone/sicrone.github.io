@@ -23,6 +23,35 @@ tags:
 - YAML front matter
 - description
 - jekyll
+
+docs:
+- title: "YAML front matter"
+  children:
+    - title: "title"
+      url: /#title
+    - title: "excerpt"
+      url: /#excerpt
+    - title: "layout"
+      url: /#layout
+    - title: "table of contents"
+      url: /#table-of-contents
+    - title: "show_date"
+      url: /#show_date
+    - title: "read_time"
+      url: /#read_time
+    - title: "categories"
+      url: /#categories
+    - title: "tags"
+      url: /#tags
+    - title: "header"
+      url: /#header
+    - title: "기타"
+      url: /#기타
+    - title: "적용 예"
+      url: /#적용-예
+
+sidebar:
+  nav: "docs"
 ---
 
 ## YAML front matter
