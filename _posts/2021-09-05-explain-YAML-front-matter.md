@@ -218,21 +218,9 @@ defaults:
 
 포스트 혹은 페이지의 head 및 footer에 custom CSS를 적용하고자 할 때 사용됩니다. 적용하기에 앞서 우선 `_includes/head/custom.html` 및 `_includes/footer/custom.html`를 아래와 같이 수정해야 합니다.
 
-```yaml
-{% if page.page_css %}
-  {% for stylesheet in page.page_css %}
-    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
-  {% endfor %}
-{% endif %}
-```
+<p align="left"><img src="{{ site.url }}/assets/img/head.jpg" alt="_includes/head/custom.html"></p>
 
-```yaml
-{% if page.page_js %}
-  {% for script in page.page_js %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
-```
+<p align="left"><img src="{{ site.url }}/assets/img/footer.jpg" alt="_includes/footer/custom.html"></p>
 
 head 부분에 custom CSS를 적용하기 위해서 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
 
