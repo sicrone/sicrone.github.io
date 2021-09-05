@@ -25,7 +25,7 @@ tags:
 - jekyll
 ---
 
-### YAML front matter
+## YAML front matter
 
 **YAML front matter**란 [Jekyll](https://jekyllrb.com/)을 이용하여  github 블로그의 글을 작성할 경우 글의 맨 앞에 삽입되는 부분입니다.  front matter가 시작되고 끝나는 부분은 3개의 대시(-)로 구분됩니다.
 
@@ -36,7 +36,7 @@ date: 2021-09-04 18:00:00
 ---
 ```
 
-#### title
+### title
 
 글의 제목을 표시합니다.
 
@@ -44,7 +44,7 @@ date: 2021-09-04 18:00:00
 title: "YAML front matter 설명"
 ```
 
-#### excerpt
+### excerpt
 
 글의 내용을 간략히 요약한 문장으로, 제목 밑에 요약문이 함께 표시됩니다.
 
@@ -52,7 +52,7 @@ title: "YAML front matter 설명"
 excerpt: "본 글은 YAML front matter 작성을 위한 설정변수 및 설명을 간략히 요약하였습니다."
 ```
 
-#### layout
+### layout
 
 layout에 지정된 값에 따라 자동으로 class가 정의되어 각 layout에 알맞는 화면을 보여줍니다. 일반적으로 많이 사용되는 layout은 다음과 같습니다.
 
@@ -69,7 +69,7 @@ layout에 지정된 값에 따라 자동으로 class가 정의되어 각 layout�
 layout: single
 ```
 
-#### table of contents
+### table of contents
 
 heading에 의해 자동으로 생성된 목차를 본문에 삽입합니다. heading은 누락된 것 없이 순차적으로 작성되어야 하며(#, ##, ###는 O, #, ###, #####는 X), 이에 해당되는 parameter는 다음과 같습니다.
 
@@ -87,7 +87,7 @@ toc_icon: "cog"
 toc_sticky: true
 ```
 
-#### show_date
+### show_date
 
 글의 제목을 표시할 때 아래에 작성된 시간을 표시할지의 여부를 지정합니다. 기본값은 `false`입니다.
 
@@ -95,14 +95,14 @@ toc_sticky: true
 show_date: true
 ```
 
-#### read_time
+### read_time
 글의 제목을 표시할 때 아래에 읽는데 소요될 시간을 표시할지의 여부를 지정합니다.  표시되는 시간은 `_config.yml`의 `words_per_minute` 항목에 지정된 값을 기준으로 계산되며, 기본값은 `true`입니다.
 
 ```yaml
 read_time: true
 ```
 
-#### categories
+### categories
 
 글의 카테고리를 지정하기 위한 부분으로, 이를 적용시 해당 글의 주소는 `https://id.github.io/카테고리명/글제목`이 됩니다.
 
@@ -111,7 +111,7 @@ categories:
   - normal
 ```
 
-#### tags
+### tags
 
 작성된 글의 tag를 지정하는 부분으로, 여러개를 동시에 지정할 수 있습니다.
 
@@ -121,7 +121,7 @@ tags:
   - YAML front matter
 ```
 
-#### header
+### header
 
 포스트 혹은 페이지에 이미지 같은 시각적인 요소를 추가하기 위한 용도로 사용됩니다. header에 추가될 수 있는 옵션은 다음과 같습니다.
 
@@ -149,9 +149,9 @@ header:
     url: "https://github.com"
 ```
 
-#### 기타
+### 기타
 
-##### wide page
+#### wide page
 
 wide 형태의 페이지로 글을 게시하려면 포스트 또는 페이지의 YAML front matter에 아래의 내용을 추가합니다.
 
@@ -159,11 +159,11 @@ wide 형태의 페이지로 글을 게시하려면 포스트 또는 페이지의
 classes: wide
 ```
 
-##### custom head and footer
+#### custom head and footer
 
 포스트 혹은 페이지의 head 및 footer에 custom CSS를 적용하고자 할 때 사용됩니다.
 
-- head
+##### head
 
 head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다.
 
@@ -182,7 +182,7 @@ page_css:
   - /path/to/your/custom.css
 ```
 
-- footer
+##### footer
 
 footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다.
 
@@ -201,7 +201,7 @@ page_js:
   - /path/to/your/custom.css
 ```
 
-#### 적용 예
+### 적용 예
 
 현재 글에 적용된 YAML front matter는 아래와 같습니다.
 
