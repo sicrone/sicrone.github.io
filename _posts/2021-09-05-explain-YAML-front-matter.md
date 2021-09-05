@@ -52,7 +52,7 @@ title: "YAML front matter 설명"
 글의 내용을 간략히 요약한 문장으로, 제목 밑에 요약문이 함께 표시됩니다.
 
 ```yaml
-excerpt: "YAML front matter 작성을 위한 설정변수 및 설명을 간략히 요약하였습니다."
+excerpt: "본 글은 YAML front matter 작성을 위한 설정변수 및 설명을 간략히 요약하였습니다."
 ```
 
 ### layout
@@ -216,13 +216,9 @@ defaults:
 
 #### custom head and footer
 
-포스트 혹은 페이지의 head 및 footer에 custom CSS를 적용하고자 할 때 사용됩니다.
+포스트 혹은 페이지의 head 및 footer에 custom CSS를 적용하고자 할 때 사용됩니다. 적용하기에 앞서 우선 `_includes/head/custom.html` 및 `_includes/footer/custom.html`를 아래와 같이 수정해야 합니다.
 
-##### head
-
-head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custom.html` 을 아래와 같이 수정합니다. 
-
-```javascript
+```javascript:_includes/head/custom.html
 {% if page.page_css %}
   {% for stylesheet in page.page_css %}
     <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
@@ -230,18 +226,7 @@ head 부분에 custom CSS를 적용하기 위해서 우선 `_includes/head/custo
 {% endif %}
 ```
 
-그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
-
-```yaml
-page_css:
-  - /path/to/your/custom.css
-```
-
-##### footer
-
-footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/custom.html` 을 아래와 같이 수정합니다. 
-
-```javascript
+```javascript:_includes/footer/custom.html
 {% if page.page_js %}
   {% for script in page.page_js %}
     <script src="{{ script | relative_url }}"></script>
@@ -249,7 +234,14 @@ footer 부분에 custom CSS를 적용하기 위해서 우선 `_includes/footer/c
 {% endif %}
 ```
 
-그런 다음 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
+head 부분에 custom CSS를 적용하기 위해서 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
+
+```yaml
+page_css:
+  - /path/to/your/custom.css
+```
+
+footer 부분에 custom CSS를 적용하기 위해서 YAML front matter에 적용할 custom css의 정보를 아래와 같이 입력합니다.
 
 ```yaml
 page_js:
