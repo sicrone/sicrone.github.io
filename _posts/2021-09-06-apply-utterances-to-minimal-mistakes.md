@@ -11,7 +11,7 @@ toc_label: "Page Index"
 header:
   show_overlay_excerpt: true
   overlay_filter: 0.5
-  overlay_color: "#333"
+  overlay_color: "#8A0808"
   actions:
     - label: "More Info"
       url: "https://utteranc.es/"
