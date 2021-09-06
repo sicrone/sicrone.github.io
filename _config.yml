@@ -23,7 +23,7 @@ name                     : "sicrone"
 description              : "Code factory about everything"
 url                      : "https://sicrone.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "sicrone/sicrone.github.io"
+repository               : "sicrone/sicrone-comment"
 teaser                   : # "/assets/img/teaser.jpg"
 logo                     : # "/assets/img/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
