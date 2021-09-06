@@ -258,6 +258,9 @@ header:
     - label: "More Info"
       url: "https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
 
+sidebar: 
+  nav: "docs"
+
 categories: 
 - markdown 
 tags: 
