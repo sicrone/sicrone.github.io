@@ -36,12 +36,12 @@ tags:
 
 Intel Fortran Compiler를 설치할 경우 기본적으로 [Visual Studio Shell](https://docs.microsoft.com/ko-kr/visualstudio/extensibility/internals/visual-studio-shell?view=vs-2019)이 함께 설치되며, 이러한 경우 대부분은 Visual Studio 내 Project 설정을 변경함으로써 해결이 가능합니다.
 
-> **Project -> Properties -> Configuration Properties -> Fortran ->Diagnostics -> Check routine interfaces** : **No**로 변경!!!
+**Project -> Properties -> Configuration Properties -> Fortran ->Diagnostics -> Check routine interfaces** : **No**로 변경!!!
 
 위와 같이 설정을 변경했음에도 실행 시 아래와 같은 에러가 발생한다면 다음과 같이 Project 설정을 추가로 변경하면 해결이 가능합니다.
 
 > forrtl: severe <408>: fort: <2>: Subscript #1 of the array C1 has value 18 which is greater than the upper bound of 9
 
-> **Project -> Properties -> Configuration Properties -> Fortran ->Run-time -> Check Array and String Bounds** : **No**로 변경!!!
+**Project -> Properties -> Configuration Properties -> Fortran ->Run-time -> Check Array and String Bounds** : **No**로 변경!!!
 
 어쩌다 한번씩 과거에 작성된 Fortran 소스를 열어서 실행해 볼 때가 있는데, 매번 기억이 안나서 기록도 남길 겸 해서 관련 글을 작성해 봅니다.
