@@ -10,7 +10,7 @@ header:
   overlay_color: "##0000FF"
 
 categories: 
-- python
+- coding
 tags: 
 - pyinstaller
 - python
