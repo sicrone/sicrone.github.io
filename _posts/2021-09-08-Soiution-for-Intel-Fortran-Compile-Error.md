@@ -27,8 +27,11 @@ tags:
 오래전에 작성된 Fortran 소스를 다시 사용하려고 [Intel® Fortran Compiler](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/fortran-compiler.html#gs.av5o7k)를 이용하여 컴파일할 경우 구문 관련 에러가 발생하는 경우가 많습니다. 대개는 과거의 Fortran 구문과 현재 사용하는 Fortran 구문과의 차이로 인해 발생하는 문법 검사 과정에서 발생하는 경우가 많습니다. 이와 관련하여 대표적으로 발생하는 에러들은 아래와 같습니다.
 
 > **error #6633**: The type of the actual argument differs from the type of the dummy argument.
+>
 > **error #6634**: The shape matching rules of actual arguments and dummy arguments have been violated.
+>
 > **error #7983**: The storage extent of the dummy argument exceeds that of the actual argument.
+>
 > **error #7836**: If the actual argument is scalar, the corresponding dummy argument shall be scalar unless the actual argument is an element of an array that is not an assumed-shape or pointer array, or a substring of such an element.
 
 Intel Fortran Compiler를 설치할 경우 기본적으로 [Visual Studio Shell](https://docs.microsoft.com/ko-kr/visualstudio/extensibility/internals/visual-studio-shell?view=vs-2019)이 함께 설치되며, 이러한 경우 대부분은 Visual Studio 내 Project 설정을 변경함으로써 해결이 가능합니다.
