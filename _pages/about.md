@@ -1,10 +1,7 @@
 ---
-title: "About this blog" 
-permalink: /about/ 
-header:
-  image: /assets/img/teaser.jpg
-
-layout: single 
+title: "About this blog"
+permalink: /about/
+layout: single
 --- 
 
 ### 블로그 소개
