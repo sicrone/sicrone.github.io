@@ -128,15 +128,16 @@ tags:
 
 포스트 혹은 페이지에 이미지 같은 시각적인 요소를 추가하기 위한 용도로 사용됩니다. header에 추가될 수 있는 옵션은 다음과 같습니다.
 
-| Name                 | Description                                                 | Default |
-| -------------------- | ----------------------------------------------------------- | ------- |
-| overlay_image        | 글 상단의 header 부분에 삽입될 overlay image를 지정         |         |
-| overlay_filter       | overlay image의 색상 혹은 투명도를 지정                     |         |
-| overay_color         | overlay image 대신 색상을 지정                              |         |
-| caption              | overlay image의 캡션을 지정                                 |         |
-| show_overlay_excerpt | overlay image(or color)에 excerpt를 표시할지의 여부         | `true`  |
-| excerpt              | header에 excerpt를 추가할 경우 기존 작성된 excerpt를 덮어씀 |         |
-| actions              | action button link를 호출                                   |         |
+| Name                 | Description                                                  | Default |
+| -------------------- | ------------------------------------------------------------ | ------- |
+| overlay_image        | 글 상단의 header 부분에 삽입될 overlay image를 지정. 해당 image 위에 title 등의 정보를 함께 표시할 수 있음 |         |
+| overlay_filter       | overlay image의 색상 혹은 투명도를 지정                      |         |
+| overay_color         | overlay image 대신 색상을 지정                               |         |
+| image                | 글 상단의 header 부분에 삽입될 image를 지정. 해당 image 위에 title 등의 정보를 함께 표시할 수 없음 |         |
+| caption              | overlay image의 캡션을 지정                                  |         |
+| show_overlay_excerpt | overlay image(or color)에 excerpt를 표시할지의 여부          | `true`  |
+| excerpt              | header에 excerpt를 추가할 경우 기존 작성된 excerpt를 덮어씀  |         |
+| actions              | action button link를 호출                                    |         |
 
 ```yaml
 header:
@@ -153,6 +154,14 @@ header:
 ```
 
 ### 기타
+
+#### permalink
+
+작성된 글에 고유 주소를 부여하고자 할 때 사용됩니다. 아래와 같이 permalink를 부여할 경우 해당 글은 `id.github.io/yyyy-mm-dd-title'`이 아닌 `id.github.io/about'`이라는 주소로 접근할 수 있습니다.
+
+```yaml
+permalink: /about/
+```
 
 #### wide page
 
