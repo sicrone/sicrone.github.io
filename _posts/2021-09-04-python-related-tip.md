@@ -11,7 +11,7 @@ header:
   overlay_color: "#333"
 
 categories: 
-- python 
+- coding
 tags: 
 - python
 - tip
