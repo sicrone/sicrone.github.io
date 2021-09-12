@@ -90,7 +90,44 @@ List 내 각각의 값을 Index 필요없이 변수에 할당하는 방법
 [24, 'Photo']
 ```
 
+### List 내 개별 문자열을 합쳐서 문자열 만들기
+
+개별 문자열들을 합치는 경우 `+`를 사용할 수 있으나, 문자열을 더해 나갈 때마다 문자열 객체를 생성하므로 메모리 관리 차원에서 join을 사용하는 것이 보다 효율적이다.
+
+``` python
+>>> a = ['I', 'am', 'a', 'boy.']
+>>> print(' '.join(a))
+I am a boy.
+```
+
+### List 내에서 가장 빈번하게 나오는 요소 찾기
+
+collections 라이브러리 내 most_common을 이용하여  List 내에서 가장 빈번하게 나오는 요소를 찾을 수 있다.
+
+```python
+>>> from collections import Counter
+>>> a = [1,1,2,3,5,6,2,5,6,7,4,1,2,1]
+>>> cnt = Counter(a)
+>>> print(cnt.most_common(2))
+[(1,4), (2,3)]
+```
+
+### List에서 중복된 값 제거하기
+
+List 내에서 중복된 값을 제거하기 위해서는 아래와 같이 두가지 방법을 사용할 수 있다.
+
+```python
+>>> ll = [1,2,3,4,3,2,3,4]
+>>> list(set(ll))
+[1,2,3,4]
+
+>>> from collections import OrderedDict
+>>> list(OrderedDict.fromkeys(ll).keys())
+[1,2,3,4]
+```
+
 ## Dictionary
+
 ### Dictionary 추가하기
 List로 입력받은 자료를 dictionary에 추가하려면 아래와 같이 실행한다.
 
@@ -102,7 +139,19 @@ List로 입력받은 자료를 dictionary에 추가하려면 아래와 같이 �
 {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5}
 ```
 
+또한 저장된 dictionary 내 요소를 얻기 위해서는 아래와 같이 실행한다.
+
+```python
+>>> ccc['c']
+3
+>>> ccc.get('D')
+4
+```
+
+
+
 ## I/O
+
 ### json 모듈 활용
 List 형태의 데이터를 한번에 파일에 쓰거나 읽기 위해 json 모듈 내 dump, load명령어를 아래와 같이 사용할 수 있다.
 
@@ -120,4 +169,4 @@ f.close()
 
 
 
-20210904 계속 추가 예정
+20210912 계속 추가 예정
