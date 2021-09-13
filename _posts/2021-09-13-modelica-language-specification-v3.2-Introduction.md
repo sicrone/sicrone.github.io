@@ -19,6 +19,7 @@ tags:
 - modelica
 - language
 - specification
+- introduction
 ---
 
 ## 1. Introduction
@@ -68,8 +69,8 @@ Modelica 클래스에는 클래스의 그래픽 표현(아이콘 및 다이어�
 다음 구문 메타 기호가 사용됩니다(확장 BNF).
 
 ```
-[ ] 선택 사항
-{ } 0회 이상 반복
+[ ] optional
+{ } repeat zero or more times
 ```
 
 볼드체는 Modelica 언어의 키워드를 나타냅니다. 키워드는 예약어이며 식별자로 사용할 수 없습니다. 단, 섹션 제목의 키워드인 `initial`과 선언 함수의 키워드인 `der`를 제외하고는 `initial()` 및 `der(...)`함수를 호출하는 것도 가능합니다. 전체 어휘 사양 및 문법은 부록 B를 참조하십시오.
