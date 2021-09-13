@@ -18,10 +18,10 @@ categories:
 tags: 
 - Intel Fortran
 - compile
-- error #6634
-- error #6633
-- error #7983
-- error #7836
+- error 6634
+- error 6633
+- error 7983
+- error 7836
 ---
 
 오래전에 작성된 Fortran 소스를 다시 사용하려고 [Intel® Fortran Compiler](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/fortran-compiler.html#gs.av5o7k)를 이용하여 컴파일할 경우 구문 관련 에러가 발생하는 경우가 많습니다. 대개는 과거의 Fortran 구문과 현재 사용하는 Fortran 구문과의 차이로 인해 발생하는 문법 검사 과정에서 발생하는 경우가 많습니다. 이와 관련하여 대표적으로 발생하는 에러들은 아래와 같습니다.
