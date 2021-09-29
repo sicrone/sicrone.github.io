@@ -58,7 +58,7 @@ Modelica Language를 기반으로 하는 다양한 모델링 및 시뮬레이션
 
 <img src="{{ site.url }}/assets/img/om_fig01.jpg" />
 
-모델을 시뮬레이션 코드로 변환하는 과정은 다음과 같다.
+모델을 시뮬레이션 코드로 변환하는 과정은 다음과 같습니다.
 
 <img src="{{ site.url }}/assets/img/om_fig02.jpg" />
 
