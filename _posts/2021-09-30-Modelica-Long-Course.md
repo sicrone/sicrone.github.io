@@ -63,11 +63,11 @@ Modelica Language를 기반으로 하는 다양한 모델링 및 시뮬레이션
 
 아래의 그림은 OpenModelica Environment Architecture를 나타낸 것입니다.
 
-<img src="{{ site.url }}/assets/img/om_fig01.jpg" style="zoom:50%;" />
+<img src="{{ site.url }}/assets/img/om_fig01.jpg" />
 
 모델을 시뮬레이션 코드로 변환하는 과정은 다음과 같다.
 
-<img src="{{ site.url }}/assets/img/om_fig02.jpg" style="zoom:50%;" />
+<img src="{{ site.url }}/assets/img/om_fig02.jpg" />
 
 계속 업데이트됩니다!!!
 
