@@ -60,7 +60,7 @@ Modelica Language를 기반으로 하는 다양한 모델링 및 시뮬레이션
 - [Simulation X]([System Simulation Software (esi-group.com)](https://www.esi-group.com/products/system-simulation))
 - [MapleSim]([MapleSim - Advanced System-Level Modeling & Simulation - Maplesoft](https://www.maplesoft.com/products/maplesim/))
 - [Wolfram System Modeler]([Wolfram System Modeler: Modeling, Simulation & Analysis](https://www.wolfram.com/system-modeler/)) (예전 MathModelica)
-- [Amesim]([Simcenter Amesim | Siemens Software](https://www.plm.automation.siemens.com/global/ko/products/simcenter/simcenter-amesim.html))
+- [Amesim](https://www.plm.automation.siemens.com/global/ko/products/simcenter/simcenter-amesim.html)
 - [OpenModelica]([Welcome to OpenModelica - OpenModelica](https://www.openmodelica.org/))
 
 아래의 그림은 OpenModelica Environment Architecture를 나타낸 것이다.
@@ -72,3 +72,4 @@ Modelica Language를 기반으로 하는 다양한 모델링 및 시뮬레이션
 <img src="{{ site.url }}/assets/img/om_fig02.jpg" style="zoom:50%;" />
 
 계속 업데이트됩니다!!!
+
