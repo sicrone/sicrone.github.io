@@ -26,8 +26,6 @@ tags:
 
 ## 제 1 강 - Introduction
 
-### What is Modelica?
-
 [Modelica]([Modelica Language — Modelica Association](https://modelica.org/modelicalanguage.html))는 복잡한 물리 시스템을 모델링하기 위한 언어로, 기본적으로 시뮬레이션을 위해 설계되었지만 최적화 등의 다른 용도로도 사용 가능합니다. Robotics, Automotive, Aircrafts, Satellites, Power plants, System biology 등 다양한 분야에 활용 가능하며, 시간(time)이 포함된 Equation-based dynamic model을 사용합니다.
 
 Modelica 언어의 주요 특징으로는,
@@ -54,16 +52,16 @@ Modelica 언어의 주요 특징으로는,
 
 ## 제 2 강 - Modelica Environments
 
-Modelica Language를 기반으로 하는 다양한 모델링 및 시뮬레이션 환경을 제공하는 대표적인 도구는 다음과 같다. 이 중에서 OpenModelica를 제외한 나머지는 상용 소프트웨어이며, 유일하게 OpenModelica만이 오픈소스 기반으로 개발된 도구이다. OpenModelica는 Windows, Linux, Mac 등 다양한 플랫폼에서 사용 가능하며, 모든 OpenModelica GUI tool은 Qt4 GUI 라이브러리를 기반으로 만들어졌다.
+Modelica Language를 기반으로 하는 다양한 모델링 및 시뮬레이션 환경을 제공하는 대표적인 도구는 다음과 같습니다. 이 중에서 OpenModelica를 제외한 나머지는 상용 소프트웨어이며, 유일하게 OpenModelica만이 오픈소스 기반으로 개발된 도구입니다. OpenModelica는 Windows, Linux, Mac 등 다양한 플랫폼에서 사용 가능하며, 모든 OpenModelica GUI tool은 Qt4 GUI 라이브러리를 기반으로 만들어졌습니다.
 
-- [Dymola]([Dymola - 다쏘시스템® (3ds.com)](https://www.3ds.com/ko/products-services/catia/products/dymola/))
-- [Simulation X]([System Simulation Software (esi-group.com)](https://www.esi-group.com/products/system-simulation))
-- [MapleSim]([MapleSim - Advanced System-Level Modeling & Simulation - Maplesoft](https://www.maplesoft.com/products/maplesim/))
-- [Wolfram System Modeler]([Wolfram System Modeler: Modeling, Simulation & Analysis](https://www.wolfram.com/system-modeler/)) (예전 MathModelica)
+- [Dymola](https://www.3ds.com/ko/products-services/catia/products/dymola/)
+- [Simulation X](https://www.esi-group.com/products/system-simulation)
+- [MapleSim](https://www.maplesoft.com/products/maplesim/)
+- [Wolfram System Modeler](https://www.wolfram.com/system-modeler/) (예전 MathModelica)
 - [Amesim](https://www.plm.automation.siemens.com/global/ko/products/simcenter/simcenter-amesim.html)
-- [OpenModelica]([Welcome to OpenModelica - OpenModelica](https://www.openmodelica.org/))
+- [OpenModelica](https://www.openmodelica.org/)
 
-아래의 그림은 OpenModelica Environment Architecture를 나타낸 것이다.
+아래의 그림은 OpenModelica Environment Architecture를 나타낸 것입니다.
 
 <img src="{{ site.url }}/assets/img/om_fig01.jpg" style="zoom:50%;" />
 
