@@ -47,9 +47,9 @@ https://api.telegram.org/bot{토큰 값이 들어가는 부분}/getUpdates
 
 1. 코드를 작성하기 전에 커맨드창을 열어서 telegram 관련 라이브러리인 `python-telegram-bot`를 먼저 설치합니다.
    
-   ```
-   pip install python-telegram-bot
-   ```
+```
+pip install python-telegram-bot
+```
 
 2. 테스트를 위해 아래와 같이 간단하게 코드를 입력한 후 실행합니다. 여기에 `ID`와 `API token`은 앞서 복사해둔 값을 사용합니다.
 
