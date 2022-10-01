@@ -14,9 +14,8 @@ header:
   overlay_color: "#FF8D33"
 
 categories: 
-
 - coding
-  tags: 
+tags: 
 - python
 - telegram
 - bot
@@ -26,7 +25,7 @@ categories:
 
 Python을 이용하여 Telegram bot으로 메세지를 보내는 방법을 설명합니다.
 
-# 1. Telegram bot 만들기
+## 1. Telegram bot 만들기
 
 1. 먼저 Telegram을 실행하여 상단 돋보기 모양을 클릭한 후 `BotFather`를 검색합니다.
 
@@ -44,7 +43,7 @@ Python을 이용하여 Telegram bot으로 메세지를 보내는 방법을 설�
 https://api.telegram.org/bot{토큰 값이 들어가는 부분}/getUpdates
 ```
 
-# 2. Python에서 코드 작성하기
+## 2. Python에서 코드 작성하기
 
 1. 코드를 작성하기 전에 커맨드창을 열어서 telegram 관련 라이브러리인 `python-telegram-bot`를 먼저 설치합니다.
    
