@@ -20,10 +20,10 @@ tags:
 - fortran
 - compile error
 - intel fortran compiler
-- error #6633
-- error #6634
-- error #7983
-- error #7836
+- error 6633
+- error 6634
+- error 7983
+- error 7836
 
 ---
 
