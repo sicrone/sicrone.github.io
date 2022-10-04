@@ -11,7 +11,7 @@ toc_label: "Page Index"
 header:
   show_overlay_excerpt: true
   overlay_filter: 0.5
-  overlay_color: "##93F7F2"
+  overlay_color: "#93F7F2"
 
 categories: 
 - coding
