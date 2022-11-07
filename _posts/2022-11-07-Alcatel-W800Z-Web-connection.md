@@ -1,3 +1,28 @@
+---
+title: "Alcatel W800Z Web connection 사용하기" 
+excerpt: "Alcatel W800Z에서 USB를 연결하여 네트워크를 사용하기 위한 방법을 설명합니다."
+show_date: true
+read_time: true
+
+toc: false
+toc_sticky: true
+toc_label: "Page Index"
+
+header:
+  show_overlay_excerpt: true
+  overlay_filter: 0.5
+  overlay_color: "#F8FC6C"
+
+categories: 
+- etc
+
+tags: 
+- alcatel
+- w800z
+- web connection
+
+---
+
 Alcatel에서 출시된 W800Z는 LTE를 지원하는 라우터로 USB에 직접 삽입하는 유선연결 외에도 WIFI를 이용하는 무선연결까지도 지원한다. 동일한 스펙을 가지는 L800의 경우는 USB에 직접 삽입하는 유선연결만 지원한다. W800Z가 지원하는 주파수 대역은 아래와 같다.  
 
 > **지원 주파수 대역**
