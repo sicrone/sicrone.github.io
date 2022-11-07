@@ -1,6 +1,6 @@
 ---
 title: "DSM 7.0에서 USB(통신) 사용하기" 
-excerpt: "DSN 7.0에서 저장 용도가 아닌 통신 목적(WIFI, Bluetooth, Zigbee 등)의 외장 USB를 사용하기 위한 방법을 설명합니다."
+excerpt: "DSM 7.0에서 저장 용도가 아닌 통신 목적(WIFI, Bluetooth, Zigbee 등)의 외장 USB를 사용하기 위한 방법을 설명합니다."
 show_date: true
 read_time: true
 
