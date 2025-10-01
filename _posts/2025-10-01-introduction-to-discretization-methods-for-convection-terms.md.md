@@ -50,6 +50,7 @@ tags:
 - **MUSCL (Monotonic Upstream-centered Scheme for Conservation Laws)**: TVD 조건을 만족시키는 대표적인 기법군입니다.
 	- **원리**: 기본적으로 고차 기법(예: 2차 풍상차분)을 사용하되, 해의 변화가 급격한 지역에서는 **경사 제한자(slope limiter)**를 적용하여 구배를 완만하게 만듭니다. 이는 국부적으로 1차 풍상차분도법처럼 작동하여 진동을 억제하는 효과를 낳습니다.
 	- **장점**: 해가 완만한 영역에서는 고차 정확도를 유지하고, 충격파나 불연속면 근처에서는 안정성을 확보하는, '똑똑한' 혼합 방식입니다. 정확성과 안정성을 모두 잡기 위한 현대적인 CFD 코드에서 널리 사용됩니다.
+	
 ## 요약 비교
 | 기법 | 정확도 차수 | 안정성 | 주요 특징 및 단점 |
 | --- | --- | --- | --- |
@@ -58,6 +59,7 @@ tags:
 | 2nd-Order Upwind | 2차 | 보통 | 정확도와 안정성의 절충안. 범용적으로 사용됨 |
 | QUICK | 3차 | 보통 | 고정밀 해석에 유리하나, 진동이 발생할 수 있음 |
 | MUSCL/TVD | 고차 | 높음 | 고차 정확도를 유지하면서 진동을 억제함. 충격파 등 불연속 문제에 강함 |
+
 ## References
 - [https://www.youtube.com/watch?v=zFwtF-WkBoU](https://www.youtube.com/watch?v=zFwtF-WkBoU)
 - [https://en.wikipedia.org/wiki/Upwind_differencing_scheme_for_convection](https://en.wikipedia.org/wiki/Upwind_differencing_scheme_for_convection)
